@@ -11,4 +11,15 @@ fun nullSafety() {
     var nullable: String? = "You can keep a null here"
     // This is ok
     nullable = null
+
+    // Check for null in conditions
+    if (neverNull == null) {
+        println("neverNull is null")
+    } else {
+        println("neverNull is not null")
+    }
+
+    // Safe call operator
+    println(neverNull.length) // 18
+    println(nullable?.length) // null
 }
