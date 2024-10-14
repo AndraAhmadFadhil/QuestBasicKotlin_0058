@@ -61,6 +61,19 @@ fun ContohSet() {
     println(shapesLocked)
 }
 
+fun ContohMap() {
+    println()
+    println("=== Map ===")
+
+    // Map Read-Only
+    val readOnlyShape: Map<String, Int> = mapOf("Circle" to 1, "Square" to 2, "Triangle" to 3)
+    println(readOnlyShape)
+
+    // Map Mutable
+    val shape: MutableMap<String, Int> = mutableMapOf("Circle" to 1, "Square" to 2, "Triangle" to 3)
+    println(shape)
+}
+
 
 
 fun main() {
